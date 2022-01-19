@@ -48,9 +48,19 @@ export default function ({ app }, inject): void {
         content: meta?.description || description,
       },
       {
-        hid: 'og:image',
+        hid: 'og:image:unique',
         property: 'og:image',
         content: meta?.image || image,
+      },
+      {
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content: '1500',
+      },
+      {
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content: '791',
       },
       {
         hid: 'twitter:url',
@@ -68,7 +78,7 @@ export default function ({ app }, inject): void {
         content: meta?.description || description,
       },
       {
-        hid: 'twitter:image',
+        hid: 'twitter:image:unique',
         name: 'twitter:image',
         content: meta?.image || image,
       },
